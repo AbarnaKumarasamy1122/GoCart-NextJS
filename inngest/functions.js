@@ -14,7 +14,7 @@ export const syncUserCreation = inngest.createFunction(
         image: data.image_url,
       },
     });
-  }
+  },
 );
 
 export const syncUserUpdation = inngest.createFunction(
@@ -32,7 +32,7 @@ export const syncUserUpdation = inngest.createFunction(
         image: data.image_url,
       },
     });
-  }
+  },
 );
 
 export const syncUserDeletion = inngest.createFunction(
@@ -45,5 +45,5 @@ export const syncUserDeletion = inngest.createFunction(
         id: data.id,
       },
     });
-  }
+  },
 );
