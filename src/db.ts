@@ -8,3 +8,4 @@ const adapter = new PrismaNeon({
 })
 
 export const prisma = new PrismaClient({ adapter })
+
