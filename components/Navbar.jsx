@@ -2,7 +2,7 @@
 import { PackageIcon, Search, ShoppingCart, ShoppingCartIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useUser, useClerk, UserButton } from "@clerk/nextjs";
 
@@ -18,7 +18,7 @@ const Navbar = () => {
 
     const handleSearch = (e) => {
         e.preventDefault()
-        router.push(`/shop?search=${search}`)
+            router.push(`/shop?search=${search}`)
     }
 
     return (
